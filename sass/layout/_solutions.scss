@@ -1,0 +1,82 @@
+
+.solutions-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.solutions-conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  color: #FFFFFF;
+}
+.solutions-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.solutions-title {
+  display: block;
+}
+.solution-block {
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+  width: 270px;
+  &::before {
+    display: flex;
+    content: '';
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.antenna {
+  &::before {
+    background-image: url("./image/symbol-defs.svg#icon-phone");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.solution-block.antenna {
+  &::before {
+    background-image: url("../image/antenna.svg");
+  }
+}
+.solution-block.clock {
+  &::before {
+    background-image: url("../image/clock.svg");
+  }
+}
+.solution-block.diagram {
+  &::before {
+    background-image: url("../image/diagram.svg");
+  }
+}
+.solution-block.astronaut {
+  &::before {
+    background-image: url("../image/astronaut.svg");
+  }
+}
+.title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-title-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.par-text-solution {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
